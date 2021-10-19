@@ -1,0 +1,15 @@
+import pyautogui
+
+var = pyautogui.alert("O programa esta rodando por favor não usar o mouse e teclado!")
+pyautogui.PAUSE = 0.5
+pyautogui.press('winleft')
+pyautogui.write("chrome")
+pyautogui.press("enter")
+pyautogui.PAUSE = 0.5
+pyautogui.write('https://drive.google.com/drive/my-drive')
+pyautogui.press('enter')
+pyautogui.hotkey("ctrlleft", "t")
+pyautogui.hotkey("winleft", "d")
+pyautogui.moveTo(120, 44)
+pyautogui.doubleClick()
+pyautogui.alert("O codigo acabou de rodar, você esta livre para trabalhar novamente")
